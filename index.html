@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Natasha's Favorite Desserts</title>
+	<link rel="icon" href="images/cupcake.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Google Font stuff --> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<script type="text/javascript">
+		function popUp() {
+			let password = prompt("Please enter your password!")
+			switch(password) {
+				case "mousse is king":
+					window.location.replace("https://www.apple.com/")
+					break;
+				default:
+					alert("Wrong password. You've been hacked.")
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<h1>My Favorite Desserts</h1>
+	<h2 id="hiddenButton" onclick="popUp()">
+		Hidden
+	</h2>
+
+	<a href="mousse.html">
+		<div class="sliders odd">
+			<p>Chocolate<br>Mousse</p>
+			<img src="images/mousse.png">
+		</div>
+	</a>
+
+	<div class="sliders even">
+		<p>Avocado<br>Buns</p>
+		<img src="images/avocado.png">
+	</div>
+
+	<div class="sliders odd">
+		<p>Custard<br>Buns</p>
+		<img src="images/custard.png">
+	</div>
+</body>
+</html>

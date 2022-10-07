@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	text-transform: uppercase	;
+	letter-spacing: 0.2em;
+}
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.sliders {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.sliders:hover {
+	opacity: 0.8;
+	transition: 0.4s ease;
+}
+
+.sliders > img {
+	width: 100%;
+}
+
+.sliders > p {
+	position:  absolute;
+	background-color: black;
+	font-weight: bold;
+	color: white;
+
+	padding: 2em 0em;
+}
+
+.even > p {
+	padding-left: 2em;
+	padding-right: 5em;
+	text-align: left;
+}
+
+.odd > p {
+	padding-left: 5em;
+	padding-right: 2em;
+	text-align: right;
+}
+
+
+.sliders.even  {
+	justify-content: right;
+}
+
+h1 {
+	margin: 1em 0;
+	font-weight: 300;
+}
+
+h2 {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: 0;
+}
+
+/* SLIDER ANIMATIONS */
+
+.sliders.odd > p {
+	animation-name: slideOutLeft;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes slideOutLeft {
+	from {
+		padding-left: 15em;
+		letter-spacing: 0.5em;
+	}
+	to {
+		padding-left: 2em;
+		letter-spacing: 0.2em;
+	}
+}
+
+.sliders.odd:hover > p {
+	animation-name: slideInLeft;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideInLeft { 
+	
+	from {
+		padding-left: 2em;
+		letter-spacing: 0.2em;
+	}
+
+	to {
+		padding-left: 15em;
+		letter-spacing: 0.5em;
+	}
+}
+
+.sliders.even > p {
+	animation-name: slideOutRight;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideOutRight {
+	from {
+		padding-right: 15em;
+		letter-spacing: 0.5em;
+	}
+	to {
+		padding-right: 2em;
+		letter-spacing: 0.2em;
+	}
+}
+
+.sliders.even:hover > p {
+	animation-name: slideInRight;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideInRight { 
+	
+	from {
+		padding-right: 2em;
+		letter-spacing: 0.2em;
+	}
+
+	to {
+		padding-right: 15em;
+		letter-spacing: 0.5em;
+	}
+}

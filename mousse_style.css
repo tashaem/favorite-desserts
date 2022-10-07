@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background-color: white;
+	text-align: center;
+}
+
+
+#banner {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bannerPic {
+	width: 100%;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+
+	position: absolute;
+}
+
+#description {
+	padding: 2em;
+	font-size: 1.5em;
+}
+
+#recipeDiv {
+	display: flex;
+}
+
+#recipeDiv img {
+	width: 100%;
+	border-radius: 2em;
+}
+#recipeDiv > div {
+	padding: 1.5em;
+} 
+
+#recpicDiv {
+	width: 40%;
+}
+#listDiv {
+	width: 60%;
+	text-align: left;
+	font-size: 1.2em;
+
+	display: flex;
+	align-items: center;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+#recipeDiv {
+	padding: 1em 2em;
+}
+
+#backButton {
+	position: absolute;
+	width: 4em;
+	right: 4%;
+	bottom: 6%;
+	-webkit-filter: invert(1);
+}
